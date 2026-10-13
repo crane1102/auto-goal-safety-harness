@@ -36,3 +36,9 @@ No credentials, network service, Hermes installation, or production configuratio
 The project is intentionally isolated. It only operates on text, explicitly supplied metadata, an in-memory simulation store, and an explicitly selected audit path. It does not read session history or alter any production agent directory. Keep production auto-goal disabled until independent testing establishes a safe integration contract.
 
 See `docs/` for the threat model, inventory, validation report, and contribution rules.
+
+## Help test the hard part
+
+The project needs real counterexamples more than compliments. If an unfinished multi-turn task is misclassified, or if a normal one-shot message is treated as a continuation candidate, open an issue with the smallest reproducible case. See `CONTRIBUTING.md` and `ISSUES.md`.
+
+The intended outcome is a safer shared test surface: more people can run it, challenge its boundaries, and improve the implementation before anyone considers production integration.
